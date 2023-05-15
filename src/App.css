@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(151, 151, 6);
+}
+
+.row {
+  margin: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(151, 151, 6);
+  padding: 20px;
+}
