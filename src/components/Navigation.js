@@ -1,17 +1,19 @@
-import React, { Component } from 'react'
-export default class Navigation extends Component {
-    render() {
-        return (
-            <div>
-                <nav>
-                    <ul>
-                        <li><a className='active' href="#home">Home</a></li>
-                        <li><a href='#news'>News</a></li>
-                        <li><a href='#about'>About</a></li>
-                        <li><a href='#contact'>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        )
-    }
+import React from 'react'
+import { Players } from '../Share/ListOfPlayers'
+export default function Players() {
+  
+    return (
+    <div className='container'>
+        {Players.map((player)=>(
+           <div className='column'>
+           <div className='card'>
+           <img src={player.img}/>
+             <h3>{player.name}</h3>
+             <p className='title'>{player.club}</p>
+             <p><button>Detail</button></p>
+           </div>
+         </div>
+        ))}
+    </div>
+  )
 }
